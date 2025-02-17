@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup_bkg"
+    tools:context=".ui.RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/signupName"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:hint="Your name"
+        android:padding="12dp" />
+    <EditText
+        android:id="@+id/signupemail"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:hint="Email"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+    <EditText
+        android:id="@+id/signuppswrd"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:hint="Password"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/etRole"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:hint="Select Role"
+        android:text=""
+        android:inputType="none"
+        android:clickable="true"
+        android:focusable="false"
+       />
+    <EditText
+        android:id="@+id/etSecretKey"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Secret Key"
+        android:inputType="number"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:text="SIGN UP"
+        android:id="@+id/signupButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/redirectLogin"
+        android:text="Already Registered? Login"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bkg"
+    tools:context=".ui.LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginEmail"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Email"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+
+        />
+    <EditText
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginpassword"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:hint="Password"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp"
+
+
+        />
+
+
+    <Button
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_border"
+        android:text="LOGIN"
+        android:id="@+id/loginButton"
+        />
+
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="forgot password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:text="Not yet Registered? Signup"
+        android:textSize="18sp"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

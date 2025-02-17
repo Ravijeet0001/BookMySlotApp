@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/interviewer_bkg"
+    tools:context=".ui.InterviewerActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+       >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/specialization"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_border"
+        android:padding="10dp"
+        android:hint="Enter specilization (eg. Data Science, Java)"/>
+
+    <EditText
+        android:id="@+id/picDate"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_border"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:clickable="true" />
+
+
+    <EditText
+        android:id="@+id/starttime"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_border"
+        android:padding="10dp"
+        android:hint="Select Start Time"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <EditText
+        android:id="@+id/endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_border"
+        android:padding="10dp"
+        android:hint="Select End Time"
+        android:focusable="false"
+        android:clickable="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_border"
+            android:padding="10dp"
+            android:hint="Enter your email"/>
+
+    <Button
+        android:id="@+id/addslotbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Add Slot" />
+
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Slots"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="12dp" />
+    
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="95dp"
+         android:layout_marginRight="95dp"
+         android:layout_marginTop="250dp"
+         android:padding="10dp"
+         android:text="Your Slots"
+         android:id="@+id/seeyourslot"
+         />
+
+    </LinearLayout>
+
+</ScrollView>
